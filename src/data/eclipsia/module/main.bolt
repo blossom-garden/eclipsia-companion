@@ -1,0 +1,7 @@
+function eclipsia:load:
+  title @a actionbar {
+    "translate":"debug.eclipsia.loaded",
+    "fallback":"Eclipsia Datapack Loaded!",
+    "color":"light_purple",
+    "italic":true
+  }

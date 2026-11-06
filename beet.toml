@@ -1,0 +1,14 @@
+name        = "eclipsia-companion"
+description = "Companion datapack and resourcepack for the Eclipsia modpack"
+output      = "build"
+require     = ["beet.contrib.auto_yaml", "bolt"]
+pipeline    = ["mecha", "eclipsia.function_headers", "beet.contrib.strip_final_newlines", "beet.contrib.minify_json"]
+
+[data_pack]
+  load = ["src"]
+
+[resource_pack]
+  load = ["src"]
+
+[meta.bolt]
+  entrypoint = "eclipsia:main"

@@ -1,0 +1,10 @@
+.env
+.envrc
+build
+
+.direnv
+.venv
+.beet_cache
+.python-version
+
+__pycache__
