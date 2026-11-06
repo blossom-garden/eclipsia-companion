@@ -5,15 +5,18 @@ minecraft   = "26.3"
 description = "Companion datapack and resourcepack for the Eclipsia modpack"
 output      = "build"
 require     = ["beet.contrib.auto_yaml", "bolt"]
-pipeline    = ["mecha", "beet.contrib.strip_final_newlines", "beet.contrib.minify_json"]
+pipeline    = ["mecha", "beet.contrib.function_header", "beet.contrib.strip_final_newlines", "beet.contrib.minify_json"]
 
 [data_pack]
-  load   = ["src"]
-  zipped = true
+  load = ["src"]
+  # zipped = true
 
 [resource_pack]
-  load   = ["src"]
-  zipped = true
+  load = ["src"]
+  # zipped = true
 
 [meta.bolt]
   entrypoint = "eclipsia:main"
+
+[meta.function_header]
+  match = ["eclipsia:*"]
